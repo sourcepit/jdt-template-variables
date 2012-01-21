@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>org.sourcepit</groupId>
-	<artifactId>jdt-template-variables</artifactId>
+	<artifactId>jdt.template.variables</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
