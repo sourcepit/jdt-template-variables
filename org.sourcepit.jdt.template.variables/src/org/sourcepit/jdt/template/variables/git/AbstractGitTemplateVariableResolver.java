@@ -15,7 +15,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.RepositoryBuilder;
 
 /**
- * @author Bernd
+ * @author Bernd Vogt <bernd.vogt@sourcepit.org>
  */
 public abstract class AbstractGitTemplateVariableResolver<T> extends TemplateVariableResolver
 {

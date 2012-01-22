@@ -9,7 +9,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.UserConfig;
 
 /**
- * @author Bernd
+ * @author Bernd Vogt <bernd.vogt@sourcepit.org>
  */
 public class GitUserEmailResolver extends AbstractGitTemplateVariableResolver<UserConfig>
 {

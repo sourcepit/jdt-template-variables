@@ -4,6 +4,9 @@ package org.sourcepit.jdt.template.variables;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
+/**
+ * @author Bernd Vogt <bernd.vogt@sourcepit.org>
+ */
 public class Activator implements BundleActivator
 {
    private static BundleContext context;

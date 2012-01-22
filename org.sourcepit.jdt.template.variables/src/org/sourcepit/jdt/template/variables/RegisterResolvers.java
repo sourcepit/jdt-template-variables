@@ -20,7 +20,7 @@ import org.sourcepit.jdt.template.variables.git.GitUserNameResolver;
  * <tt>editor-templates</tt> via internal extension-point.
  * 
  * @author hoehmann
- * @author Bernd
+ * @author @author Bernd Vogt <bernd.vogt@sourcepit.org>
  */
 @SuppressWarnings("restriction")
 public class RegisterResolvers implements IStartup
