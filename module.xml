@@ -16,23 +16,28 @@
 
 	<name>JDT Template Variables Extender</name>
 
+	<scm>
+		<connection>scm:git:git@github.com:sourcepit/jdt-template-variables.git</connection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<properties>
 		<tycho.version>0.21.0</tycho.version>
 		<b2.extension.version>0.15.0</b2.extension.version>
-		
+
 		<b2.facets.plugins.requiredFeatures>
 			org.eclipse.jdt,
 			org.eclipse.jgit
 		</b2.facets.plugins.requiredFeatures>
-		
+
 		<b2.facets.tests.requiredFeatures>
 			org.eclipse.platform
 		</b2.facets.tests.requiredFeatures>
-		
+
 		<b2.facets.tests.requiredPlugins>
 			org.junit
 		</b2.facets.tests.requiredPlugins>
-		
+
 	</properties>
 
 	<repositories>
