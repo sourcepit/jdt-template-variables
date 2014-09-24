@@ -6,19 +6,33 @@
 	<parent>
 		<groupId>org.sourcepit</groupId>
 		<artifactId>srcpit-parent</artifactId>
-		<version>2-SNAPSHOT</version>
+		<version>16</version>
 	</parent>
 
 	<groupId>org.sourcepit</groupId>
-	<artifactId>jdt.template.variables</artifactId>
+	<artifactId>jdt-template-variables</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
+
 	<name>JDT Template Variables Extender</name>
 
 	<properties>
-		<tycho.version>0.13.0</tycho.version>
-		<b2.extension.version>0.1.0-alpha-1</b2.extension.version>
+		<tycho.version>0.21.0</tycho.version>
+		<b2.extension.version>0.15.0</b2.extension.version>
+		
+		<b2.facets.plugins.requiredFeatures>
+			org.eclipse.jdt,
+			org.eclipse.jgit
+		</b2.facets.plugins.requiredFeatures>
+		
+		<b2.facets.tests.requiredFeatures>
+			org.eclipse.platform
+		</b2.facets.tests.requiredFeatures>
+		
+		<b2.facets.tests.requiredPlugins>
+			org.junit
+		</b2.facets.tests.requiredPlugins>
+		
 	</properties>
 
 	<repositories>
@@ -27,18 +41,11 @@
 			<url>${srcpit.nexus.url}/content/groups/public/</url>
 		</repository>
 		<repository>
-			<id>indigo</id>
-			<url>http://p2.sourcepit.org/eclipse/indigo/</url>
+			<id>luna</id>
+			<url>http://download.eclipse.org/releases/luna</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>srcpit-public</id>
-			<url>${srcpit.nexus.url}/content/groups/public/</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<build>
 		<extensions>
@@ -67,6 +74,25 @@
 				<version>${tycho.version}</version>
 				<configuration>
 					<resolver>p2</resolver>
+					<dependency-resolution>
+						<extraRequirements>
+							<requirement>
+								<id>org.eclipse.platform</id>
+								<versionRange>0.0.0</versionRange>
+								<type>eclipse-feature</type>
+							</requirement>
+							<requirement>
+								<id>org.eclipse.jdt</id>
+								<versionRange>0.0.0</versionRange>
+								<type>eclipse-feature</type>
+							</requirement>
+							<requirement>
+								<id>org.eclipse.egit</id>
+								<versionRange>0.0.0</versionRange>
+								<type>eclipse-feature</type>
+							</requirement>
+						</extraRequirements>
+					</dependency-resolution>
 					<environments>
 						<environment>
 							<os>linux</os>
@@ -77,11 +103,6 @@
 							<os>win32</os>
 							<ws>win32</ws>
 							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
 						</environment>
 					</environments>
 				</configuration>
