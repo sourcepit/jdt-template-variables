@@ -10,14 +10,14 @@
 
 	<groupId>org.sourcepit</groupId>
 	<artifactId>jdt-template-variables</artifactId>
-	<version>0.3.0</version>
+	<version>0.4.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>JDT Template Variables Extender</name>
 
 	<scm>
 		<connection>scm:git:git@github.com:sourcepit/jdt-template-variables.git</connection>
-		<tag>0.3.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<properties>
