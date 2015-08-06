@@ -42,11 +42,11 @@
 	<repositories>
 		<repository>
 			<id>srcpit-public</id>
-			<url>${srcpit.nexus.url}/content/groups/public/</url>
+			<url>http://nexus.sourcepit.org/content/groups/public/</url>
 		</repository>
 		<repository>
-			<id>luna</id>
-			<url>http://download.eclipse.org/releases/luna</url>
+			<id>mars</id>
+			<url>http://download.eclipse.org/releases/mars</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>
