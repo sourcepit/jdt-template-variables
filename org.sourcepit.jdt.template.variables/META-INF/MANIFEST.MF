@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: JDT Template Variables Extender
 Bundle-SymbolicName: org.sourcepit.jdt.template.variables;singleton:=true
-Bundle-Version: 0.3.0.qualifier
+Bundle-Version: 0.3.0
 Bundle-Activator: org.sourcepit.jdt.template.variables.Activator
 Bundle-Vendor: sourcepit.org
 Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)",
