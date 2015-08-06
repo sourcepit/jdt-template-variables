@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.sourcepit</groupId>
 		<artifactId>srcpit-parent</artifactId>
-		<version>16</version>
+		<version>21</version>
 	</parent>
 
 	<groupId>org.sourcepit</groupId>
@@ -21,8 +21,8 @@
 	</scm>
 
 	<properties>
-		<tycho.version>0.21.0</tycho.version>
-		<b2.extension.version>0.15.0</b2.extension.version>
+		<tycho.version>0.22.0</tycho.version>
+		<b2.extension.version>0.19.0</b2.extension.version>
 
 		<b2.facets.plugins.requiredFeatures>
 			org.eclipse.jdt,
